@@ -1,0 +1,113 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: white;
+    list-style: none;
+}
+body{
+    background-color: black;
+}
+span {
+    color:#d15db2;
+}
+header{
+    padding: 15px 7%;
+    background-color: #1e265a;
+}
+header nav{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav .logo {
+    height: 50px;
+    overflow: hidden;
+    color: #3c8d88;
+    font-size: 25px;
+}
+header nav .logo img{
+    height: 100%;
+}
+header nav .logo > span {
+    color:#d15db2;
+    font-size: 1.7em;
+}
+
+header nav .navDiv{
+ width: 50%;
+}
+header nav .navDiv .navItems{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+header nav .navDiv .navItems li a{
+    font-size: 20px;
+    color: #3c8d88;
+    text-transform: uppercase;
+}
+header nav .navDiv .navItems li .dropdown{
+    position: absolute;
+    padding: 15px 5px;
+    background: #1e265a;
+    display: none;
+}
+header nav .navDiv .navItems li .dropdown li{
+    color: #3c8d88;
+    font-size: 17px;
+    line-height: 25px;
+}
+header nav .navDiv .navItems li:hover .dropdown{
+    display: block;
+}
+header nav .navDiv .navItems li:hover {
+    border-bottom: 1px solid #3c8d88;
+}
+
+
+.home-section{
+    background: url(Media/Enduri\ Pitha\ \(cover\).webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 75px 7%;
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+}
+
+.home-section .container{
+    display: flex;
+    align-items: center;
+}
+.home-section .container .Home-content h1{
+    font-size: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 25px;
+}
+.home-section .container .Home-content p{
+    text-align: center;
+}
+
+footer {
+    background: #1e265a;
+    padding: 75px 7%;
+}
+footer .container .footerContent{
+    display: flex;
+    justify-content: space-between;
+}
+footer .container .footerContent div h3 {
+    padding-bottom: 25px;
+}
+footer .container .footerContent .followUs a{
+    color: #3c8d88;
+    display: block;
+}
