@@ -13,6 +13,11 @@ body{
 span {
     color:#d15db2;
 }
+.title{
+    text-align: center;
+    font-size: 45px;
+    margin-bottom: 60px;
+}
 header{
     padding: 15px 7%;
     background-color: #1e265a;
@@ -45,6 +50,7 @@ header nav .navDiv .navItems{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    gap: 25px;
 
 }
 header nav .navDiv .navItems li a{
@@ -70,13 +76,15 @@ header nav .navDiv .navItems li:hover {
     border-bottom: 1px solid #3c8d88;
 }
 
+section{
+    padding: 75px 7%;
+}
 
 .home-section{
     background: url(Media/Enduri\ Pitha\ \(cover\).webp);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 75px 7%;
     height: 85vh;
     display: flex;
     justify-content: center;
@@ -110,4 +118,120 @@ footer .container .footerContent div h3 {
 footer .container .footerContent .followUs a{
     color: #3c8d88;
     display: block;
+}
+
+/* gallery section */
+
+.gallery-section{
+
+}
+.gallery-section .container .gallery-Items{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+    overflow: hidden;
+}
+.gallery-section .container .gallery-Items .gallery-Item{
+    width: 600px;
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+    padding: 5px;
+    background: #1e265a;
+    border-radius: 5px;
+}
+.gallery-section .container .gallery-Items .gallery-Item h1{
+    color:#3c8d88; 
+    font-size: 25px;
+}
+.gallery-section .container .gallery-Items .gallery-Item .video{
+    width: 300px;
+}
+.gallery-section .container .youtube-videos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+    overflow: hidden;
+}
+.gallery-section .container .youtube-videos .yt-video{
+    width: 400px;
+    margin: 25px;
+    background:#d15db2;
+    border-radius: 5px;
+}
+.gallery-section .container .youtube-videos .yt-video .video iframe{
+    width: 100%;
+}
+.gallery-section .container .youtube-videos .yt-video .contents{
+    padding: 30px;
+}
+.gallery-section .container .youtube-videos .yt-video .contents h1 {
+    font-size: 25px;
+    padding-bottom: 15px;
+    color:#3c8d88;
+}
+/* blog section */
+
+.blog-section .container .blogs{
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+.blog-section .container .blogs .blog{
+    width: 350px;
+    padding: 35px;
+    background: linear-gradient( #1e265a , #3c8d88 ,  #c759a9);
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    box-shadow: 3px -6px 9px #3c8d88;
+}
+.blog-section .container .blogs .blog h1{
+    color: #d15db2;
+    font-size: 25px;
+    margin: 15px 0;
+}
+.blog-section .container .blogs .blog p{
+    color: #adadad;
+    line-height: 25px;
+    margin-bottom: 15px;
+}
+.blog-section .container .blogs .blog button {
+    background: #3c8d88;
+    font-size: 1.3rem;
+    padding: 7px 15px;
+    border: none;
+}
+
+/* about section */
+
+.about-section .container .about-p{
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.about-section .container .team-members{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    gap: 30px;
+}
+.about-section .container .team-members .person{
+    width: 350px;
+    overflow: hidden;
+    text-align: center;
+    background: #1e265a;
+    border-radius: 5px;
+    padding: 10px;
+}
+.about-section .container .team-members .person .person-img{
+    width: 100%;
+}
+.about-section .container .team-members .person h3{
+    color: #3c8d88;
+    font-size: 25px;
+    margin: 15px 0;
 }
